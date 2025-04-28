@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ar" className="dark">
+    <html className="dark">
       <body className={`${tajawal.variable} ${cairo.variable} antialiased`}>{children}</body>
     </html>
   )
