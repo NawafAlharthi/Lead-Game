@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define Arabic fonts - assuming we'll link them in layout.tsx */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@400;700&display=swap');
+
+@layer base {
+  :root {
+    /* Dark theme variables based on LEAD KFUPM theme */
+    --background: 210 30% 10%; /* Dark blue/teal */
+    --foreground: 210 10% 80%; /* Light grey for text */
+
+    --card: 210 30% 15%; /* Slightly lighter card background */
+    --card-foreground: 210 10% 85%;
+
+    --popover: 210 30% 10%;
+    --popover-foreground: 210 10% 85%;
+
+    --primary: 45 80% 60%; /* Gold/Yellow accent */
+    --primary-foreground: 210 30% 5%; /* Dark text on gold */
+
+    --secondary: 210 20% 25%; /* Muted secondary background */
+    --secondary-foreground: 45 80% 60%; /* Gold accent on secondary */
+
+    --muted: 210 20% 20%;
+    --muted-foreground: 210 10% 60%; /* Muted grey text */
+
+    --accent: 45 70% 50%; /* Slightly darker gold for accents */
+    --accent-foreground: 210 30% 5%;
+
+    --destructive: 0 70% 50%; /* Red for destructive actions */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 30%; /* Border color */
+    --input: 210 20% 30%; /* Input background */
+    --ring: 45 80% 60%; /* Gold ring for focus */
+
+    --radius: 0.5rem;
+  }
+
+  /* Apply dark theme by default */
+  .dark {
+    /* Variables are already defined in :root for dark theme */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Apply Arabic font first, then fallback */
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+  }
+}
+
+
+
+@layer components {
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
