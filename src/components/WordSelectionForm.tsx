@@ -255,14 +255,14 @@ export default function WordSelectionForm() {
 
 اكتشف نوع قيادتك: ${websiteLink}
 
-عبر @LEAD_KFUPM
+عبر @KFUPMLEAD
 
 #LEAD | #جامعة_البترول | #LEAD2025`
       : `Just found out I'm a ${leadershipStyle.nameEn}!
 
 Discover your leadership style: ${websiteLink}
 
-via @LEAD_KFUPM
+via @KFUPMLEAD
 
 #LEAD | #KFUPM | #LEAD2025`
     
