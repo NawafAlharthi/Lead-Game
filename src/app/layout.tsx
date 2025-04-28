@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     icon: '/favicon.ico'
   },
   openGraph: {
-    title: "LEAD 2025 | مستقبل الابتكار",
+    title: "LEAD 2025 | اعرف اسلوبك القيادي",
     description:
-      "انضم إلى LEAD 2025 واستمتع بجدول مميز من المتحدثين والمسارات والمناقشات حول مستقبل التكنولوجيا.",
+      "#LEAD  هو لعبة تفاعلية تهدف إلى مساعدتك في اكتشاف أسلوبك القيادي.",
     url: `https://game.lead-kfupm.com/`,
     siteName: "LEAD",
     images: [
