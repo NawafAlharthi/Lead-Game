@@ -249,8 +249,7 @@ export default function WordSelectionForm() {
   const handleShareTwitter = () => {
     if (!leadershipStyle) return
     
-    // Reverted to standard web intent URL for better compatibility
-    const websiteLink = "https://qduatcsm.manus.space"; // Use the latest deployed link
+    const websiteLink = "https://game.lead-kfupm.com"; 
     const tweetText = language === 'ar' 
       ? `اكتشفت أنني ${leadershipStyle.nameAr}!
 
@@ -258,14 +257,14 @@ export default function WordSelectionForm() {
 
 عبر @LEAD_KFUPM
 
-#القيادة #جامعة_البترول`
+#LEAD | #جامعة_البترول | #LEAD2025`
       : `Just found out I'm a ${leadershipStyle.nameEn}!
 
 Discover your leadership style: ${websiteLink}
 
 via @LEAD_KFUPM
 
-#Leadership #KFUPM`
+#LEAD | #KFUPM | #LEAD2025`
     
     // Encode the tweet text for URL
     const encodedTweet = encodeURIComponent(tweetText)
